@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}EL BLOG DE GABO{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Logo con imagen (más grande, pero sin afectar el header) -->
+      <a class="logo" href="{{ url_for('index') }}">
+        <div class="logo-wrapper">
+          <img src="{{ url_for('static', filename='img/gabo.png') }}" alt="Logo" class="logo-img">
+        </div>
+      </a>
+
+      <!-- Botón para abrir menú -->
+    <div class="menu-wrapper">
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+
+  <!-- Menú desplegable -->
+  <nav class="main-nav" id="main-nav">
+    <a href="{{ url_for('index') }}">Inicio</a>
+    <a href="{{ url_for('sobre') }}">Sobre</a>
+    <a href="{{ url_for('corte', n=1) }}">1° Corte</a>
+    <a href="{{ url_for('corte', n=2) }}">2° Corte</a>
+    <a href="{{ url_for('corte', n=3) }}">3° Corte</a>
+    <a href="{{ url_for('multimedia') }}">Multimedia</a>
+    <a href="{{ url_for('contacto') }}">Contacto</a>
+  </nav>
+</div>
+  </header>
+
+  <main class="content container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flashbox">
+          {% for cat, msg in messages %}
+            <div class="flash {{cat}}">{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Columna 1: Equipo -->
+    <div class="footer-column">
+      <h3>Equipo</h3>
+      <ul>
+        <li>Maria Barranco</li>
+        <li>José Revollo</li>
+        <li>Jhon Forbes</li>
+        <li>Ricardo Pantoja</li>
+      </ul>
+    </div>
+
+    <!-- Columna 2: Redes -->
+    <div class="footer-column">
+      <h3>Síguenos</h3>
+      <ul class="social-list">
+        <li>
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@mariabarranco
+        </li>
+        <li>
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@joserevollo
+        </li>
+        <li>
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@jhonforbes
+        </li>
+        <li>
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@ricardopantoja
+        </li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Logo + frase -->
+    <div class="footer-column logo-footer">
+      <img class="footer-logo" src="{{ url_for('static', filename='img/gabo.png') }}" alt="Logo Gabo">
+      <p>“La vida no es la que uno vivió, sino la que uno recuerda y cómo la recuerda para contarla.”</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
+  

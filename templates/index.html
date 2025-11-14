@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Inicio - EL BLOG DE GABO{% endblock %}
+{% block content %}
+<section class="fondo-index">
+<section class="hero">
+  <img src="{{ url_for('static', filename='images/gabo_portada.png') }}" alt="Portada">
+<div class="hero-text">
+  <p>
+    Bienvenidos a <strong>El Blog de Gabo</strong>, un espacio donde la realidad se confunde con la fantasía y las palabras cobran vida.  
+    Aquí rendimos homenaje al universo mágico y profundamente humano de <strong>Gabriel García Márquez</strong>, el escritor que nos enseñó que la vida cotidiana puede ser tan extraordinaria como los sueños.  
+    Entre letras, sonidos, imágenes y recuerdos, este sitio busca revivir la esencia de Gabo: su forma de mirar el mundo, su pasión por contar historias y su legado como uno de los narradores más grandes del siglo XX.  
+    Cada sección está pensada para sumergirte en su universo, comprender su pensamiento y dejarte llevar por la fuerza poética que lo hizo eterno.
+  </p>
+</div>
+</section>
+
+<section class="highlights cortes-grid">
+  <article class="corte-card">
+    <a href="{{ url_for('corte', n=1) }}">
+      <img src="{{ url_for('static', filename='images/sobre_gabo.png') }}" alt="Sobre Gabo">
+      <h3>Sobre Gabo</h3>
+    </a>
+  </article>
+    <article class="corte-card">
+    <a href="{{ url_for('corte', n=2) }}">
+      <img src="{{ url_for('static', filename='images/obra_gabo.jpg') }}" alt="Obra">
+      <h3>Obras</h3>
+    </a>
+  </article>
+
+  <article class="corte-card">
+    <a href="{{ url_for('corte', n=3) }}">
+      <img src="{{ url_for('static', filename='images/cronologia_gabo.png') }}" alt="Cronología">
+      <h3>Cronología</h3>
+    </a>
+  </article>
+
+  <article class="corte-card">
+    <a href="{{ url_for('corte', n=4) }}">
+      <img src="{{ url_for('static', filename='images/legado_gabo.png') }}" alt="Legado">
+      <h3>Legado</h3>
+    </a>
+  </article>
+</section>
+</section>
+{% endblock %}

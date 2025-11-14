@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+{% block title %}{{ corte.title }} - EL BLOG DE GABO{% endblock %}
+
+{% block content %}
+<section class="corte-page">
+  <h1 class="corte-title">{{ corte.title }}</h1>
+  <p class="corte-summary">{{ corte.summary }}</p>
+
+  {% if corte.id == 1 %}
+  <!-- === SOBRE GABO === -->
+  <div class="sobre-gabo">
+  <div class="sobre-gabo-grid">
+    <div class="sobre-texto">
+      <h2>La infancia mítica</h2>
+      <p>Gabriel García Márquez nació en Aracataca (Magdalena) el 6 de marzo de 1927. Creció como niño único entre sus abuelos maternos y sus tías, pues sus padres, el telegrafista Gabriel Eligio García y Luisa Santiaga Márquez, se fueron a vivir, cuando el pequeño Gabriel contaba sólo cinco años, a la población de Sucre, en la que don Gabriel Eligio abrió una farmacia y Luisa Santiaga daría a luz a la mayoría de los once hijos del matrimonio.</p>
+      <p>Los abuelos de García Márquez eran dos personajes bien particulares y marcaron el periplo literario del futuro Nobel: el coronel Nicolás Márquez, veterano de la guerra de los Mil Días (1899-1902), le contaba a Gabriel infinidad de historias de su juventud y de las guerras civiles del siglo XIX, lo llevaba al circo y al cine, y fue su cordón umbilical con la historia y con la realidad. Doña Tranquilina Iguarán, su cegatona abuela, pasaba los días contando fábulas y leyendas familiares, mientras organizaba la vida de los miembros de la casa de acuerdo con los mensajes que recibía en sueños: ella fue la fuente de la visión mágica y supersticiosa y sobrenatural de la realidad. Entre sus tías, la que más lo marcó fue Francisca, quien tejió su propio sudario para dar fin a su vida.</p>
+    </div>
+
+    <div class="sobre-imagen">
+    <div class="imagen-con-texto">
+    <img src="{{ url_for('static', filename='images/infancia.jpg') }}" alt="Gabriel García Márquez">
+    <p class="pie-imagen">Gabriel García Márquez de niño</p>
+    </div>
+    </div>
+    </div>
+
+  <div class="sobre-gabo-extra">
+    <p>Gabriel García Márquez aprendió a escribir a los cinco años, en el colegio Montessori de Aracataca, con la joven y bella profesora Rosa Elena Fergusson, de quien se enamoró: fue la primera mujer que lo perturbó. Cada vez que se le acercaba le daban ganas de besarla, y sólo por el hecho de verla iba con gusto a la escuela. Rosa Elena le inculcó la puntualidad y el hábito de escribir directamente en las cuartillas, sin borrador.</p>
+    <p>En 1936, tras la muerte de su abuelo, Gabriel García Márquez dejó Aracataca para vivir con sus padres en el puerto de Sucre. Poco después ingresó como interno al Colegio San José de Barranquilla, donde a los diez años ya escribía versos humorísticos. En 1940, obtuvo una beca para estudiar en el Liceo Nacional de Zipaquirá, una etapa difícil marcada por el frío y la soledad del internado, pero también por el inicio de su vocación literaria. Durante esos años viajó en barco por el río Magdalena, experiencia que, junto a los recuerdos de su infancia en Aracataca, inspiraría gran parte del universo mítico de sus obras. Entre 1944 y 1946 tuvo como profesor de literatura a Carlos Julio Calderón Hermida, a quien más tarde dedicaría La hojarasca y recordaría como "el profesor ideal de Literatura". En Zipaquirá también dibujaba, hacía caricaturas y escribió algunos poemas juveniles antes de graduarse en 1946 con excelentes calificaciones.</p>
+  
+     <h2 class="titulo-seccion">Estudiante de leyes</h2>
+     <p>En 1947, por insistencia de sus padres, Gabriel García Márquez se trasladó a Bogotá para estudiar Derecho en la Universidad Nacional. Aunque la capital le pareció fría y distante, fue allí donde consolidó su vocación literaria. Tuvo como profesor a Alfonso López Michelsen y se hizo amigo de Camilo Torres Restrepo. Ese mismo año publicó su primer cuento, "La tercera resignación", en El Espectador, presentado por Eduardo Zalamea Borda, quien lo calificó como una nueva promesa de la literatura colombiana. Poco después publicó "Eva está dentro de un gato".</p>
+     <p>El Bogotazo de 1948 marcó un giro en su vida: la universidad cerró, perdió sus pertenencias en un incendio y se trasladó a Cartagena, donde continuó sus estudios en la Universidad de Cartagena. Aunque nunca se graduó, comenzó a trabajar como columnista en El Universal, gracias a Manuel Zapata Olivella, dando inicio a su destacada carrera periodística.</p>
+
+     <h2 class="titulo-seccion">Formación y madurez literaria en Barranquilla</h2>
+     <p>A comienzos de los años cuarenta surgió en Barranquilla el Grupo de Barranquilla, una tertulia literaria liderada por el librero y crítico Ramón Vinyes, conocido como "el sabio catalán", y por José Félix Fuenmayor, quien guiaba a jóvenes escritores como Álvaro Cepeda Samudio, Alfonso Fuenmayor y Germán Vargas.</p>
+     <p>Gabriel García Márquez se unió al grupo mientras trabajaba como periodista. Primero viajaba desde Cartagena para participar en las reuniones, y luego, al mudarse a Barranquilla, comenzó a escribir su columna "La jirafa" en El Heraldo bajo el seudónimo "Septimus". Junto a sus compañeros, compartía largas jornadas de lectura y debate en la librería de Vinyes o en el bar La Cueva, donde discutían sobre autores como Faulkner, Camus y Virginia Woolf, perfeccionando su estilo narrativo.</p>
+     <p>Durante esta etapa vivió con dificultades económicas, llegando incluso a dejar los manuscritos de La hojarasca como garantía para pagar una noche de alojamiento. El grupo también fundó el periódico Crónica, dirigido por Alfonso Fuenmayor, con García Márquez como jefe de redacción y Alejandro Obregón como ilustrador. Esta época marcó profundamente la formación literaria y periodística del escritor.</p>
+    
+     <div class="sobre-texto_2">
+      <h2>Carrera literaria y periodística</h2>
+      <p>A comienzos de 1950, mientras trabajaba en su primera novela La casa, Gabriel García Márquez regresó con su madre a Aracataca para vender la casa familiar. Ese viaje le hizo darse cuenta de que su pueblo ya no era el mismo, por lo que transformó su obra, le cambió el título a La hojarasca y creó el mítico Macondo.</p>
+      <p>En 1954 ingresó a El Espectador, donde fue el primer columnista de cine en Colombia y luego un reconocido cronista. En 1955 se publicó la revista Mito, dirigida por Jorge Gaitán Durán, considerada un punto clave de la modernidad intelectual en el país. Allí García Márquez publicó un fragmento de La hojarasca, el Monólogo de Isabel viendo llover en Macondo y El coronel no tiene quien le escriba, afirmando que "en Mito comenzaron las cosas".</p>
+    </div>
+    <div class="infancia-imagen">
+  <div class="imagen-con-texto">
+    <img src="{{ url_for('static', filename='images/Gabo_escribir.png') }}" alt="Gabriel García Márquez">
+    <p class="pie-imagen">En la redacción de Prensa Latina (Bogotá, 1959)</p>
+  </div>
+</div>
+    <p>Ese mismo año ganó el primer premio de la Asociación de Escritores y Artistas, publicó La hojarasca y el reportaje "Relato de un náufrago", censurado por la dictadura de Rojas Pinilla. Ante la presión política, El Espectador lo envió Ginebra y luego a Roma, donde asistió al Centro Sperimentale di Cinema.</p>
+    </div>
+    <div class="sobre-gabo-grid">
+    <div class="sobre-texto">
+      <h2>Por el mundo</h2>
+      <p>Durante los años cincuenta, Gabriel García Márquez emprendió una vida nómada que lo llevó de Europa a América Latina. En París sobrevivió entre cafés, amigos y pobreza, mientras escribía sin descanso El coronel no tiene quien le escriba y La mala hora. Aquella etapa, marcada por la precariedad, suplvésión del mundo: comprendió que América y Latina, con su caos vitalidad, era un territorio lleno de historias por contar.</p>
+      <p>como Luego viajó por distintos países corresponsal y se convirtió en un observador agudo de la realidad humana. En Venezuela fue testigo del fin de la dictadura de Pérez Jiménez, y en 1958 regresó a Barranquilla para casarse con Mercedes Barcha, su compañera incondicional. Con ella formó una familia y, pese a las dificultades económicas, nunca abandonó su pasión por escribir.</p>
+    </div>
+
+    <div class="sobre-imagen">
+  <div class="imagen-con-texto">
+    <img src="{{ url_for('static', filename='images/marquez_familia.png') }}" alt="Gabriel García Márquez">
+    <p class="pie-imagen">Con Mercedes Barcha y sus hijos</p>
+  </div>
+  </div>
+</div>
+     <div class="sobre-texto_2">
+      <h2>Macondo y el despertar de la literatura</h2>
+      <p>Su paso por Cuba y México marcó un nuevo comienzo. En México trabajó en revistas, escribió guiones de cine y compartió ideas con otros escritores latinoamericanos. Allí, en 1966, tuvo la revelación que cambiaría su vida: Cien años de soledad. Se encerró a escribir durante meses, mientras Mercedes sostenía el hogar, hasta que en 1967 la obra vio la luz.</p>
+      <p>El universo de Macondo, con su mezcla de mito, historia y realismo mágico, cautivó al mundo. La novela transformó la literatura en español y convirtió a García Márquez en el rostro del Boom latinoamericano. Con obras posteriores como El otoño del patriarca y Crónica de una muerte anunciada, consolidó una voz única que unía lo político con lo poético y lo cotidiano con lo sobrenatural.</p>
+      <p>El reconocimiento internacional llegó en 1982, cuando recibió el Premio Nobel de Literatura. Vestido con un liquilique blanco, símbolo de su tierra caribeña, pronunció su célebre discurso La soledad de América Latina, donde defendió la identidad de los pueblos latinoamericanos y su capacidad para crear belleza en medio de la adversidad. A partir de ese momento, Gabo se convirtió en una voz universal, un embajador de la cultura y del realismo mágico que había nacido del corazón de Colombia.</p>
+    </div>
+    <div class="infancia-imagen">
+  <div class="imagen-con-texto">
+    <img src="{{ url_for('static', filename='images/nobel.jpg') }}" alt="Gabriel García Márquez">
+    <p class="pie-imagen">En la entrega del Nobel (1982)</p>
+  </div>
+</div>
+<div class="sobre-gabo">
+<div class="sobre-gabo-grid">
+    <div class="sobre-texto_3">
+      <h2>El ocaso de Gabo</h2>
+      <p>Tras obtener el Premio Nobel de Literatura en 1982, García Márquez se convirtió en un personaje central de la cultura latinoamericana, lo que implicó un intenso asedio mediático y numerosos compromisos públicos.</p>
+      <p>Durante los años siguientes, su influencia se extendió más allá de la literatura: en la primera mitad de los años noventa formó parte de una comisión nacional de cultura, ciencia e investigación, junto a otros intelectuales destacados del país.
+         En el ámbito literario, continuó publicando obras importantes: en 1985 apareció El amor en los tiempos del cólera, en 1989 El general en su laberinto, en 1992 Doce cuentos peregrinos y en 1996 Noticia de un secuestro.</p>
+    </div>
+    <div class="sobre-imagen_3">
+  <div class="imagen-con-texto_3">
+    <img src="{{ url_for('static', filename='images/despedida.jpg') }}" alt="Gabriel García Márquez">
+    <p class="pie-imagen_3">Gabriel García Marquez en su cumpleaños 87</p>
+  </div>
+  </div>
+</div>
+ <div class="sobre-gabo-extra">
+  <p>Tras un período de menor producción literaria, en 2002 publicó su obra de memorias Vivir para contarla, en la que repasó sus primeros treinta años de vida. En 2004 salió la que sería su última novela, Memorias de mis putas tristes, en la que abordó el amor en la vejez desde una mirada madura.</p>
+  <p>Desde 1999 se había sometido a tratamiento por un cáncer linfático; aunque logró prolongar su vida, las secuelas del tratamiento y el deterioro de su salud fueron cada vez más visibles. Finalmente, García Márquez falleció el 17 de abril de 2014 en Ciudad de México.</p>
+  <p>Aunque los últimos años estuvieron marcados por una menor presencia pública y una actividad literaria más pausada, su figura seguía siendo un faro universal de la narrativa en español. Su obra continúa siendo objeto de estudio, homenaje y reedición, consolidándose como un legado permanente de la literatura latinoamericana.</p>
+</div>
+</div>
+
+
+  {% elif corte.id == 2 %}
+  <!-- === OBRA === -->
+   <div class="obra-completa">
+  <!-- === OBRA PRINCIPAL === -->
+  <div class="obra-bloque obra-principal-bloque">
+    <div class="obra-principal-img-con-texto">
+      <img src="{{ url_for('static', filename='images/obras-marqeuz.jpg') }}" 
+           alt="Macondo" class="obra-principal-img">
+      <p class="obra-principal-pie">Obras Gabriel Garcia Marquez</p>
+    </div>
+  </div>
+
+  <p class="obra-texto">
+    Gabriel García Márquez construyó una de las obras más sólidas y fascinantes de la literatura universal, donde cada novela refleja una etapa distinta de su madurez artística y su visión del mundo.
+  </p>
+
+  <!-- === LA HOJARASCA === -->
+  <h3 class="obra-subtitulo">La hojarasca</h3>
+
+  <div class="obra-bloque hojarasca-bloque">
+    <div class="hojarasca-img-con-texto">
+      <img src="{{ url_for('static', filename='images/la hojarasca.png') }}" 
+           alt="La hojarasca" class="hojarasca-img">
+      <p class="hojarasca-pie">El origen de Macondo</p>
+    </div>
+  </div>
+
+    <p class="obra-texto">
+    Su primera gran novela, La hojarasca (1955), introduce el mítico pueblo de Macondo, un espacio simbólico que representa la historia y los conflictos de América Latina. En ella ya se percibe su habilidad para mezclar lo real con lo mágico, además de una profunda crítica a la soledad y el abandono.
+  </p>
+
+
+  <!-- === EL CORONEL === -->
+  <h3 class="obra-subtitulo">El coronel no tiene quien le escriba</h3>
+
+  <div class="obra-bloque coronel-bloque">
+    <div class="coronel-img-con-texto">
+      <img src="{{ url_for('static', filename='images/coronel.jpg') }}" 
+           alt="El coronel" class="coronel-img">
+      <p class="coronel-pie">La dignidad en la soledad del coronel</p>
+    </div>
+  </div>
+
+  <p class="obra-texto">
+   Con El coronel no tiene quien le escriba (1961), García Márquez logra una de sus historias más humanas y conmovedoras. La espera interminable del coronel por su pensión es una metáfora de la esperanza y la dignidad en medio de la pobreza. Es una obra breve pero intensa, que muestra su capacidad para decir mucho con pocas palabras.
+  </p>
+
+  <!-- === LA MALA HORA === -->
+  <h3 class="obra-subtitulo">La mala hora</h3>
+
+  <div class="obra-bloque mala-hora-bloque">
+    <div class="mala-hora-img-con-texto">
+      <img src="{{ url_for('static', filename='images/La mala hora.jpg') }}" 
+           alt="La mala hora" class="mala-hora-img">
+      <p class="mala-hora-pie">La violencia en los pueblos latinoamericanos</p>
+    </div>
+  </div>
+
+   <p class="obra-texto">
+    La mala hora (1962) amplía su mirada social, retratando la violencia y el miedo que marcan la vida en los pueblos latinoamericanos. Aunque menos conocida, es una novela importante porque profundiza en los temas de la represión y la corrupción política.
+  </p>
+
+  <!-- === CIEN AÑOS === -->
+  <h3 class="obra-subtitulo">Cien años de soledad</h3>
+
+  <div class="obra-bloque cien-anos-bloque">
+    <div class="cien-anos-img-con-texto">
+      <img src="{{ url_for('static', filename='images/cien_anos.jpg') }}" 
+           alt="Cien años" class="cien-anos-img">
+      <p class="cien-anos-pie">Macondo y las mariposas amarillas</p>
+    </div>
+  </div>
+
+    <p class="obra-texto">
+    La obra que lo consagra definitivamente es Cien años de soledad (1967), una verdadera epopeya familiar y latinoamericana. En ella, García Márquez crea un universo donde lo mágico y lo cotidiano conviven naturalmente. Su estilo poético, su imaginación desbordante y su reflexión sobre la historia y la soledad la convierten en una de las novelas más grandes del siglo XX.
+  </p>
+
+  <!-- === OTOÑO DEL PATRIARCA === -->
+  <h3 class="obra-subtitulo">El otoño del patriarca</h3>
+
+  <div class="obra-bloque otono-bloque">
+    <div class="otono-img-con-texto">
+      <img src="{{ url_for('static', filename='images/otono_patriarca.jpg') }}"
+           alt="Otoño del patriarca" class="otono-img">
+      <p class="otono-pie">El poder y la soledad del dictador</p>
+    </div>
+  </div>
+
+    <p class="obra-texto">
+    En El otoño del patriarca (1975), el autor se aleja del tono lírico de Macondo para explorar la figura del dictador latinoamericano. Es una obra compleja, escrita en largos párrafos casi sin puntuación, que refleja la descomposición del poder y la soledad del tirano.
+  </p>
+
+  <!-- === CRÓNICA === -->
+  <h3 class="obra-subtitulo">Crónica de una muerte anunciada</h3>
+
+  <div class="obra-bloque cronica-bloque">
+    <div class="cronica-img-con-texto">
+      <img src="{{ url_for('static', filename='images/cronica.jpg') }}" 
+           alt="Crónica" class="cronica-img">
+      <p class="cronica-pie">El destino inevitable</p>
+    </div>
+  </div>
+
+    <p class="obra-texto">
+    Crónica de una muerte anunciada (1981) muestra su maestría narrativa: aunque el lector conoce el final desde el principio, el interés radica en cómo se llega a ese desenlace. Es una crítica a la indiferencia social y a las tradiciones que justifican la violencia.
+  </p>
+
+  <!-- === AMOR EN TIEMPOS === -->
+  <h3 class="obra-subtitulo">El amor en los tiempos del cólera</h3>
+
+  <div class="obra-bloque colera-bloque">
+    <div class="colera-img-con-texto">
+      <img src="{{ url_for('static', filename='images/colera.jpg') }}"
+           alt="Colera" class="colera-img">
+      <p class="colera-pie">El amor que sobrevive</p>
+    </div>
+  </div>
+
+  <p class="obra-texto">
+   Con El amor en los tiempos del cólera (1986), García Márquez demuestra que el amor también puede ser tan intenso y duradero como la historia misma. La relación entre Fermina Daza y Florentino Ariza es una reflexión sobre la paciencia, el paso del tiempo y la fidelidad emocional.
+  </p>
+
+  <!-- === GENERAL LABERINTO === -->
+  <h3 class="obra-subtitulo">El general en su laberinto</h3>
+
+  <div class="obra-bloque general-bloque">
+    <div class="general-img-con-texto">
+      <img src="{{ url_for('static', filename='images/general.jpg') }}" 
+           alt="General" class="general-img">
+      <p class="general-pie">Bolívar perdido</p>
+    </div>
+  </div>
+
+  <p class="obra-texto">
+   En El general en su laberinto (1989), el escritor mezcla historia y ficción para retratar a un Simón Bolívar anciano y desencantado. Es una mirada íntima y humana del héroe, y una meditación sobre el fracaso y el idealismo.
+  </p>
+
+  <!-- === DEMONIOS & SECUESTRO === -->
+  <h3 class="obra-subtitulo">
+    Del amor y otros demonios - Noticia de un secuestro
+  </h3>
+
+  <div class="obra-bloque demonios-bloque">
+    <div class="demonios-img-con-texto">
+      <img src="{{ url_for('static', filename='images/demonios_sec.jpg') }}" 
+           alt="Demonios" class="demonios-img">
+      <p class="demonios-pie">Entre amor prohibido y violencia</p>
+    </div>
+  </div>
+
+  <p class="obra-texto">
+   Obras posteriores como Del amor y otros demonios (1994) y Noticia de un secuestro (1996) demuestran su versatilidad: la primera retoma el tema del amor trágico en un contexto colonial, mientras que la segunda aborda la violencia contemporánea del narcotráfico en Colombia, desde una perspectiva periodística.
+  </p>
+
+  <!-- === VIVIR / MEMORIAS === -->
+  <h3 class="obra-subtitulo">
+    Vivir para contarla - Memoria de mis putas tristes 
+  </h3>
+
+  <div class="obra-bloque vivir-bloque">
+    <div class="vivir-img-con-texto">
+      <img src="{{ url_for('static', filename='images/vivir_memorias.jpg') }}" 
+           alt="Vivir" class="vivir-img">
+      <p class="vivir-pie">El escritor frente a su memoria</p>
+    </div>
+  </div>
+
+  <p class="obra-texto">
+    
+Finalmente, Vivir para contarla (2002) y Memoria de mis putas tristes (2004) cierran su trayectoria. La primera es una autobiografía que revela las raíces de su imaginación, y la segunda, una novela breve y melancólica sobre la vejez, el deseo y la ternura.
+  </p>
+<p><br></p>
+<p><br></p>
+<p>En conjunto, la obra de García Márquez es una profunda exploración del alma humana y de la identidad latinoamericana. Cada libro amplía su universo literario y demuestra que su realismo mágico no es solo fantasía, sino una forma poética de comprender la realidad. Su legado permanece como una celebración de la imaginación, la memoria y la palabra.</p>
+</div>
+
+  {% elif corte.id == 3 %}
+  <!-- === CRONOLOGÍA === -->
+<div class="timeline">
+  <div class="event" data-text="En 1927, un 6 de marzo, nace Gabriel García Márquez en el cálido pueblo de Aracataca, en el Magdalena colombiano. Nadie imaginaba que aquel niño caribeño cambiaría la literatura para siempre."><strong>1927</strong></div>
+
+  <div class="event" data-text="Para 1947, Gabo inicia la carrera de Derecho en Bogotá, aunque lo que realmente le apasiona es escribir. Ese mismo año publica su primer cuento y empieza a vislumbrar su destino literario."><strong>1947</strong></div>
+
+  <div class="event" data-text="En 1948, el Bogotazo sacude al país y la universidad cierra. García Márquez se traslada a Cartagena, donde comienza su vida como periodista, una pasión que nunca abandonará."><strong>1948</strong></div>
+
+  <div class="event" data-text="Hacia 1950 trabaja en El Heraldo de Barranquilla y forma parte del legendario Grupo de Barranquilla. En ese tiempo, viaja con su madre a vender la casa de su infancia en Aracataca, un viaje que marcaría su vocación de escritor."><strong>1950</strong></div>
+
+  <div class="event" data-text="En 1954, Gabo ingresa al periódico El Espectador. Allí se convierte en un agudo cronista y da sus primeros pasos hacia la fama."><strong>1954</strong></div>
+
+  <div class="event" data-text="Para 1955 publica su primera novela, ‘La hojarasca’. También aparece su famoso ‘Relato de un náufrago’, pero la censura del régimen lo obliga a exiliarse."><strong>1955</strong></div>
+
+  <div class="event" data-text="En 1958 publica en la revista Mito ‘El coronel no tiene quien le escriba’, obra escrita en París. Ese mismo año se casa con Mercedes Barcha, su compañera de toda la vida."><strong>1958</strong></div>
+
+  <div class="event" data-text="En 1962 lanza ‘La mala hora’ y ‘Los funerales de la Mamá Grande’, consolidando su voz literaria llena de humor, crítica y realismo mágico."><strong>1962</strong></div>
+
+  <div class="event" data-text="En 1966, en México, comienza a escribir ‘Cien años de soledad’, sin imaginar que esa historia cambiaría su vida y la de la literatura universal."><strong>1966</strong></div>
+
+  <div class="event" data-text="Un año después, en 1967, se publica ‘Cien años de soledad’. El éxito es inmediato y Macondo se convierte en un lugar inmortal."><strong>1967</strong></div>
+
+  <div class="event" data-text="En 1970 se publica en libro su famoso reportaje ‘Relato de un náufrago’, un texto que combina periodismo y literatura de manera magistral."><strong>1970</strong></div>
+
+  <div class="event" data-text="Para 1973 lanza la colección ‘La increíble y triste historia de la Cándida Eréndira y de su abuela desalmada’, donde sigue explorando el universo del Caribe."><strong>1973</strong></div>
+
+  <div class="event" data-text="En 1975, tras años de investigación y escritura, publica ‘El otoño del patriarca’, una reflexión poética sobre el poder y la soledad."><strong>1975</strong></div>
+
+  <div class="event" data-text="En 1981 aparece ‘Crónica de una muerte anunciada’, inspirada en un hecho real ocurrido en su juventud, contada con la maestría de un periodista y la sensibilidad de un narrador."><strong>1981</strong></div>
+
+  <div class="event" data-text="En 1982 llega la consagración: la Academia Sueca le otorga el Premio Nobel de Literatura. Su discurso, ‘La soledad de América Latina’, emociona al mundo entero."><strong>1982</strong></div>
+
+  <div class="event" data-text="En 1985 publica ‘El amor en los tiempos del cólera’, una historia de amor eterno que enamora a millones de lectores."><strong>1985</strong></div>
+
+  <div class="event" data-text="En 1986 publica ‘La aventura de Miguel Littín clandestino en Chile’, donde mezcla política, historia y periodismo."><strong>1986</strong></div>
+
+  <div class="event" data-text="En 1989 presenta ‘El general en su laberinto’, una novela histórica sobre los últimos días del libertador Simón Bolívar."><strong>1989</strong></div>
+
+  <div class="event" data-text="En 1992 vuelve con ‘Doce cuentos peregrinos’, pequeñas joyas que escribió durante años y que reflejan su mirada sobre el exilio y la nostalgia."><strong>1992</strong></div>
+
+  <div class="event" data-text="En 1994 publica el monólogo teatral ‘Diatriba de amor contra un hombre sentado’, donde da voz al amor y al desencanto desde la perspectiva femenina."><strong>1994</strong></div>
+
+  <div class="event" data-text="En 1996 lanza ‘Noticia de un secuestro’, un libro que combina investigación periodística con narrativa, y que retrata la violencia en Colombia."><strong>1996</strong></div>
+
+  <div class="event" data-text="En 2002 publica ‘Vivir para contarla’, la primera parte de sus memorias, donde narra su infancia, juventud y los caminos que lo llevaron a ser escritor."><strong>2002</strong></div>
+
+  <div class="event" data-text="En 2004 aparece su última novela, ‘Memorias de mis putas tristes’, una historia sobre el amor y la vejez contada con ternura y melancolía."><strong>2004</strong></div>
+
+  <div class="event" data-text="Finalmente, en 2014, un 17 de abril, Gabriel García Márquez fallece en Ciudad de México. El mundo entero lo despide con gratitud y amor. Su legado sigue vivo en cada página que escribió."><strong>2014</strong></div>
+</div>
+
+  {% elif corte.id == 4 %}
+  <!-- === LEGADO === -->
+  <div class="legado">
+    <img src="{{ url_for('static', filename='images/legado_gabo.jpg') }}" alt="Legado de Gabo">
+    <p>El legado de García Márquez trasciende fronteras: su universo literario ha marcado generaciones enteras, transformando la forma de contar historias en toda América Latina.</p>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

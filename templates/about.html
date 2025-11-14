@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sobre - EL BLOG DE GABO{% endblock %}
+{% block content %}
+<h1>Sobre el Grupo</h1>
+<p>Somos el equipo “EL BLOG DE GABO”. A través de este blog presentamos un compendio de los trabajos realizados durante el semestre. Firmado: X1, X2, X3, X4.</p>
+
+<section class="members">
+  {% for m in members %}
+  <div class="member-card">
+    <img src="{{ url_for('static', filename='images/' ~ m.photo) }}" alt="{{ m.name }}">
+    <h3>{{ m.name }}</h3>
+    <p class="role">{{ m.role }}</p>
+    <p class="bio">{{ m.bio }}</p>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}
