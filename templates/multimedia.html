@@ -1,19 +1,52 @@
 {% extends "base.html" %}
 {% block title %}Multimedia{% endblock %}
 {% block content %}
-<h1>Multimedia</h1>
-<p>Archivos subidos por el grupo:</p>
-<ul>
-  {% for f in uploads %}
-    <li><a href="{{ url_for('uploaded_file', filename=f) }}">{{ f }}</a></li>
-  {% else %}
-    <li>No hay archivos aún.</li>
-  {% endfor %}
-</ul>
 
-<h3>Subir archivo (solo miembros)</h3>
-<form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
-  <input type="file" name="file" required>
-  <button type="submit">Subir</button>
-</form>
+<div class="multimedia-container">
+
+  <h1 class="titulo-multi">Miradas Audiovisuales sobre Gabo</h1>
+
+  <p class="intro-text">
+    En esta sección encontrarás una mirada creativa y actual sobre la vida y obra de Gabriel García Márquez, 
+    a través de producciones audiovisuales y un libro virtual que celebran su legado.
+  </p>
+
+  <hr>
+
+  <!-- VIDEO 1 -->
+  <p>
+    El primer video es una adaptación moderna del cuento “En este pueblo no hay ladrones”, reimaginado con el 
+    título “En este barrio no hay ladrones”. En esta versión contemporánea, la historia se traslada a la 
+    realidad actual, conservando la esencia del relato original: la culpa, la pobreza y la moral en un pequeño 
+    barrio donde incluso los actos más simples pueden revelar la complejidad humana.
+  </p>
+
+  <div class="video-dorado">
+    <iframe src="https://www.youtube.com/embed/uXUIGxm612U" title="Video 1"></iframe>
+  </div>
+
+  <!-- VIDEO 2 -->
+  <p>
+    El segundo video es un cortometraje documental sobre Gabo en París, una evocación poética de su paso por 
+    la capital francesa. A través de una narrativa que mezcla realidad y fantasía, vemos al espíritu de Gabriel 
+    García Márquez recorriendo las calles de Barranquilla mientras recuerda su vida en París.
+  </p>
+
+  <div class="video-dorado">
+    <iframe src="https://www.youtube.com/watch?v=HNOr2lN9bLk&t=2s" title="Video 2"></iframe>
+  </div>
+
+  <!-- LIBRO INTERACTIVO -->
+  <p>
+    Por último, podrás explorar un libro virtual interactivo dedicado a su faceta como periodista. Este recorrido 
+    digital narra los inicios de García Márquez en el periodismo, su estilo narrativo único y cómo su experiencia 
+    en la prensa moldeó su voz literaria.
+  </p>
+
+  <div class="video-dorado">
+    <iframe src="https://issuu.com/universidaduac/docs/la_mirada_period_stica_de_gabo_1_" title="Libro virtual"></iframe>
+  </div>
+
+</div>
+
 {% endblock %}
