@@ -1,16 +1,94 @@
 {% extends "base.html" %}
 {% block title %}Sobre - EL BLOG DE GABO{% endblock %}
 {% block content %}
-<h1>Sobre el Grupo</h1>
-<p>Somos el equipo “EL BLOG DE GABO”. A través de este blog presentamos un compendio de los trabajos realizados durante el semestre. Firmado: X1, X2, X3, X4.</p>
+<section class="sobre-nosotros">
 
-<section class="members">
-  {% for m in members %}
-  <div class="member-card">
-    <img src="{{ url_for('static', filename='images/' ~ m.photo) }}" alt="{{ m.name }}">
-    <h3>{{ m.name }}</h3>
-    <p class="role">{{ m.role }}</p>
-    <p class="bio">{{ m.bio }}</p>
+  <h1 class="sn-titulo">Sobre nosotros</h1>
+
+  <p class="sn-intro">
+    Somos un grupo de estudiantes de Comunicación Audiovisual que actualmente cursamos la electiva 
+    “Seminario García Márquez”. Esta página web es un proyecto académico solicitado por nuestro profesor 
+    Jaime de la Hoz, y nace de nuestro interés y pasión por aprender y profundizar en la vida y legado 
+    de uno de los hombres más influyentes de la literatura, el periodismo y el cine.
+    Queremos compartir, de manera clara y creativa, aquello que hemos descubierto y comprendido sobre 
+    su obra y su impacto cultural.
+  </p>
+
+  <!-- ================================================= -->
+  <!-- 🔹 MARÍA BARRANCO -->
+  <!-- ================================================= -->
+  <div class="sn-bloque maria-bloque">
+    <div class="maria-texto sn-texto">
+      <h2 class="maria-nombre">María Barranco</h2>
+      <p class="maria-rol">Diseño y desarrollo web</p>
+      <p class="maria-bio">
+        María se encargó del diseño visual de la página web: paleta de colores, tipografías, estilo gráfico 
+        y fotografías. También trabajó en la construcción técnica del sitio, logrando un resultado atractivo 
+        y funcional.
+      </p>
+    </div>
+
+    <div class="maria-img-con-texto">
+      <img src="{{ url_for('static', filename='images/maria.jpg') }}" alt="María Barranco" class="maria-img">
+      <p class="maria-pie">María Barranco – Diseño y desarrollo web</p>
+    </div>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- 🔹 JOSÉ REVOLLO -->
+  <!-- ================================================= -->
+  <div class="sn-bloque jose-bloque">
+    <div class="jose-texto sn-texto">
+      <h2 class="jose-nombre">José Revollo</h2>
+      <p class="jose-rol">Investigación y contenido</p>
+      <p class="jose-bio">
+        José buscó, seleccionó y organizó toda la información presentada en la web. Gracias a su precisión, 
+        el contenido es claro y de fácil comprensión.
+      </p>
+    </div>
+
+    <div class="jose-img-con-texto">
+      <img src="{{ url_for('static', filename='images/jose.jpg') }}" alt="José Revollo" class="jose-img">
+      <p class="jose-pie">José Revollo – Investigación y contenido</p>
+    </div>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- 🔹 JHON FORBES -->
+  <!-- ================================================= -->
+  <div class="sn-bloque jhon-bloque">
+    <div class="jhon-texto sn-texto">
+      <h2 class="jhon-nombre">Jhon Forbes</h2>
+      <p class="jhon-rol">Investigación y contenido</p>
+      <p class="jhon-bio">
+        Jhon colaboró en la verificación de la información. Su aporte permitió ofrecer contenido confiable 
+        y de valor para los usuarios.
+      </p>
+    </div>
+
+    <div class="jhon-img-con-texto">
+      <img src="{{ url_for('static', filename='images/jhon.jpg') }}" alt="Jhon Forbes" class="jhon-img">
+      <p class="jhon-pie">Jhon Forbes – Investigación y contenido</p>
+    </div>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- 🔹 RICARDO PANTOJA -->
+  <!-- ================================================= -->
+  <div class="sn-bloque ricardo-bloque">
+    <div class="ricardo-texto sn-texto">
+      <h2 class="ricardo-nombre">Ricardo Pantoja</h2>
+      <p class="ricardo-rol">Desarrollo web</p>
+      <p class="ricardo-bio">
+        Ricardo implementó la estructura técnica de la web, funciones internas y optimización, convirtiendo 
+        el diseño en una plataforma estable.
+      </p>
+    </div>
+
+    <div class="ricardo-img-con-texto">
+      <img src="{{ url_for('static', filename='images/ricardo.jpg') }}" alt="Ricardo Pantoja" class="ricardo-img">
+      <p class="ricardo-pie">Ricardo Pantoja – Desarrollo web</p>
+    </div>
   </div>
   {% endfor %}
 </section>
