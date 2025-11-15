@@ -51,9 +51,10 @@
   </main>
 
 <footer class="site-footer">
+
   <div class="footer-container">
 
-    <!-- Columna 1: Equipo -->
+    <!-- Equipo -->
     <div class="footer-column">
       <h3>Equipo</h3>
       <ul>
@@ -64,29 +65,49 @@
       </ul>
     </div>
 
-    <!-- Columna 2: Redes -->
+    <!-- Redes -->
     <div class="footer-column">
       <h3>Síguenos</h3>
       <ul class="social-list">
+
         <li>
-          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@mariabarranco
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}">
+          <a href="https://www.instagram.com/mafe.barranco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            @mafe.barranco
+          </a>
         </li>
+
         <li>
-          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@joserevollo
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}">
+          <a href="https://www.instagram.com/jr.in.frame?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            @jr.in.frame
+          </a>
         </li>
+
         <li>
-          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@jhonforbes
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}">
+          <a href="https://www.instagram.com/jhon_fp_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            @jhon_fp_
+          </a>
         </li>
+
         <li>
-          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}" alt="Instagram">@ricardopantoja
+          <img class="icon" src="{{ url_for('static', filename='img/instagram.jpg') }}">
+          <a href="https://www.instagram.com/ricardopantojar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            @ricardopantojar
+          </a>
         </li>
+
       </ul>
     </div>
 
-    <!-- Columna 3: Logo + frase -->
+    <!-- Logo + frase animada -->
     <div class="footer-column logo-footer">
-      <img class="footer-logo" src="{{ url_for('static', filename='img/gabo.png') }}" alt="Logo Gabo">
-      <p>“La vida no es la que uno vivió, sino la que uno recuerda y cómo la recuerda para contarla.”</p>
+      <img class="footer-logo heartbeat" src="{{ url_for('static', filename='img/gabo.png') }}">
+      
+      <p class="quote appear-text">
+        “La vida no es la que uno vivió, sino la que uno recuerda y cómo la recuerda para contarla.”
+      </p>
     </div>
 
   </div>

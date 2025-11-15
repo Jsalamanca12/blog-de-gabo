@@ -3,6 +3,8 @@
 
 {% block content %}
 
+<div class="corte-page">
+
 <!-- ============================= -->
 <!--        SOBRE NOSOTROS         -->
 <!-- ============================= -->
@@ -33,22 +35,19 @@
       {% elif m.name == 'X4' %} ricardo 
       {% endif %}">
 
-    <!-- FOTOS PERSONALIZADAS -->
     {% if m.name == 'X1' %}
       <img src="{{ url_for('static', filename='images/mafe.jpeg') }}" alt="María Barranco">
       <h3>María Barranco</h3>
-	  <h3>Diseño y desarrollo web</h3>
-
+      <h3>Diseño y desarrollo web</h3>
       <p class="bio">
-        María se encargó del diseño visual de la página web: seleccionó la paleta de colores, tipografías 
-        y estilo gráfico. Además, trabajó en el desarrollo técnico del sitio, asegurando que fuera atractivo,
-        funcional y coherente.
+        María se encargó del diseño visual de la página web: seleccionó la paleta de colores, tipografías y estilo gráfico. 
+        Además, trabajó en el desarrollo técnico del sitio, asegurando que fuera atractivo,funcional y coherente
       </p>
 
     {% elif m.name == 'X2' %}
       <img src="{{ url_for('static', filename='images/revollo.jpeg') }}" alt="José Revollo">
       <h3>José Revollo</h3>
-	  <h3>Investigación y contenido</h3>
+      <h3>Investigación y contenido</h3>
 
       <p class="bio">
         José se encargó de investigar, seleccionar y organizar toda la información presentada en esta página. 
@@ -58,17 +57,17 @@
     {% elif m.name == 'X3' %}
       <img src="{{ url_for('static', filename='images/jhon.jpeg') }}" alt="Jhon Forbes">
       <h3>Jhon Forbes</h3>
-	  <h3>Investigación y contenido</h3>
+      <h3>Investigación y contenido</h3>
 
       <p class="bio">
-        Jhon colaboró en la búsqueda y verificación del contenido incluido en la web. Su aporte garantizó 
-        información confiable, bien fundamentada y orientada a los usuarios.
+        Jhon colaboró en la búsqueda y verificación del contenido incluido en la web. 
+        Su aporte garantizó información confiable, bien fundamentada y orientada a los usuarios.
       </p>
 
     {% elif m.name == 'X4' %}
       <img src="{{ url_for('static', filename='images/ricardo.jpeg') }}" alt="Ricardo Pantoja">
       <h3>Ricardo Pantoja</h3>
-	  <h3>Desarrollo web</h3>
+      <h3>Desarrollo web</h3>
       <p class="bio">
         Ricardo trabajó en el desarrollo técnico del sitio, asegurando su estructura, funcionamiento general 
         y optimización para ofrecer una experiencia estable y fluida.
@@ -79,5 +78,7 @@
   {% endfor %}
 
 </section>
+
+</div> <!-- cierre caja grande -->
 
 {% endblock %}
